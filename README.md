@@ -4,7 +4,8 @@ It will allow you to run Maven Lifecycle, build fresh Docker Image and compose D
 
 ## How to use. Example with IntelliJ IDEA
 
-* Make sure that you have Maven installed (and Environment Variables are correctly set) by running `mvn -v` in cmd.
+* Make sure that you have Maven installed (and Environment Variables are correctly set) by running `mvn -v` in cmd
+* Start Docker.
 * Download `docker-build-compose.bat`. You can place it in your project root folder or any other. If it is in the 
 project folder it will be faster to open it as cmd script right from IDE or Explorer if needed (no need to specify the 
 path).

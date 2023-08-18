@@ -1,14 +1,11 @@
 @echo off
 
 REM set container and image names
-set "container=docker-container-name"
-set "image=docker-container-name"
-
-REM set directory of run-maven.bat
-set "scriptDir=%~dp0"
+set "container=DockerContainerName"
+set "image=DockerImageName"
 
 REM Run Maven: clean install
-call %scriptDir%\run-maven.bat
+call mvn clean install
 
 REM Check if the container exists before stopping it
 docker inspect %container% > nul 2>&1

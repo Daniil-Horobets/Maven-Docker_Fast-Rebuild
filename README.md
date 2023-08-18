@@ -7,7 +7,8 @@ It will allow you to run Maven Lifecycle, build fresh Docker Image and compose D
 * Make sure that you have Maven installed (and Environment Variables are correctly set) by running `mvn -v` in cmd.
 * Download [scripts](scripts) folder content (docker-build-compose.bat, run-maven.bat). You can place them in your 
 project root folder or any other. If it is in the project folder it will be faster to open it as cmd script right 
-from IDE or Explorer (no need to specify the path).
+from IDE or Explorer (no need to specify the path). Make sure that both scripts are in one folder (or in 
+[docker-build-compose.bat](scripts/docker-build-compose.bat) change path to run-maven.bat)
 * In [docker-build-compose.bat](scripts/docker-build-compose.bat) set Docker Container name and Docker Image name. 
 You need them to be specified in docker-compose.yaml/compose.yaml of your project.
 * In [run-maven.bat](scripts/run-maven.bat) set the steps of the Maven Lifecycle you want to run. `clean` and
